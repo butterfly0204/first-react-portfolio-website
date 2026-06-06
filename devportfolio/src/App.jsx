@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+import Header from "./components/Header"
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import  Calltoaction from "./components/Calltoaction"
+
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
@@ -18,9 +19,9 @@ function App() {
       <button onClick={() => setDarkMode(!darkMode)}>
         Toggle Theme
       </button>
-
+      <Header/>
+      <Calltoaction/>
       <Navbar />
-      <Hero />
       <About />
       <Skills />
       <Services />
