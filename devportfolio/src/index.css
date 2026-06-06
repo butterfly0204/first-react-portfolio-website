@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 :root{
-  --color-bg:#23033a;
+  --color-bg:#160224;
   --color-bg-variant:#2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77,181,255,0.4);
@@ -107,15 +107,83 @@ img{
   object-fit: cover;
 }
 
+
+/* Header.jsx styles */
+header{
+  height: 100vh;
+  padding: 7rem;
+  overflow: hidden;
+
+}
+
+.header_container{
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* Call to action styles*/
+.calltoaction{
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* Socials */
+
+.header_socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header_socials::after{
+  content: " ";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+/* Me */
+.me{
+  background:linear-gradient(var(--color-primary),transparent) ;
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  border-radius:12rem 12rem 0 0 ;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 0.5rem;
+}
+
+/* Scroll Down */
+.scroll_down{
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
 /* Media QUery for (tabs) */
 @media  screen and (max-width:1024px) {
   .container{
     width: var(--container-width-md);
 
   }
- section{
-  margin-top:6rem; 
- }
+  section{
+    margin-top:6rem; 
+  }
+  header{
+    height: 68vh;
+  }
   
 }
 @media  screen and (max-width:600px) {
@@ -123,9 +191,17 @@ img{
     width: var(--container-width-sm);
 
   }
- section .h2
- {
-  margin-bottom :2rem; 
- }
   
+  section h2
+  {
+    margin-bottom :2rem; 
+  }
+  
+
+header{
+  height: 100vh;
+}
+.header_socials , .scroll_down{
+  display: none;
+}
 }

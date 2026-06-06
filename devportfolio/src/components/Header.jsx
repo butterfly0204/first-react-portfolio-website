@@ -8,8 +8,9 @@ function Header(){
                 <h5>Hello I'm </h5>
                 <h1>Mogaji Favour</h1>
                 <h5 className="text-light">Software Engineer</h5>
+                 <Headersocials/>
                  <div>
-                    <img src={me} alt="me" />
+                    <img src={me} alt="me" className="me" />
                  </div>
 
                  <a href="#contact" className="scroll_down"> Scroll Down</a>
