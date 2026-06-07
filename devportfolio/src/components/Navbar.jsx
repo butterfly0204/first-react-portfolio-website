@@ -11,10 +11,10 @@ function Navbar() {
     <nav>
       <a href="#" onClick={ () => setactiveNav('#')} className={activeNav === "#"? 'active':'' } >< FaHome /></a>
       <a href="#about" onClick={ () => setactiveNav('#about')} className={activeNav === "#about"? 'active' : ""} >< FaRegUser /></a>
-      <a href="#experience" ><FaAddressBook  /></a>
-      <a href="#services" >< RiServiceLine /></a>
-      <a href="#contact" >< BiSolidContact /></a>
-      <a href="#message" ><  SiImessage /></a>
+      <a href="#experience" onClick={ () => setactiveNav('#experience')} className={activeNav === "#experience"? 'active' : ""} ><FaAddressBook  /></a>
+      <a href="#services"onClick={ () => setactiveNav('#services')} className={activeNav === "#about"? '#services' : ""}  >< RiServiceLine /></a>
+      <a href="#contact"onClick={ () => setactiveNav('#contact')} className={activeNav === "#about"? 'active' : ""}  >< BiSolidContact /></a>
+      <a href="#message"onClick={ () => setactiveNav('#message')} className={activeNav === "#about"? 'active' : ""}  ><  SiImessage /></a>
      
     </nav>
   )
