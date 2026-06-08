@@ -311,6 +311,14 @@ nav a.active{
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
 }
+.experience_details{
+  display: flex;
+  gap:1rem;
+}
+.experiencedetails_icon{
+  margin-top: 6px;
+  color: var(--color-primary);
+}
 
 
 
