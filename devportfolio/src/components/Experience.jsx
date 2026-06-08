@@ -66,7 +66,7 @@ function Experience(){
 
               <div>
             <h4>REACT</h4>
-            <small className="text-light">Experienced</small>
+            <small className="text-light">Intermediate</small>
 
               </div>
              </article>
@@ -87,7 +87,7 @@ function Experience(){
 
               <div>
             <h4>NODE JS</h4>
-            <small className="text-light">Experienced</small>
+            <small className="text-light">Intermediate</small>
 
               </div>
              </article>
@@ -98,8 +98,8 @@ function Experience(){
               <IoMdCheckmarkCircle  className="experiencedetails_icon"/>
               <div>
 
-            <h4>MANGODB</h4>
-            <small className="text-light">Experienced</small>
+            <h4>MONGODB</h4>
+            <small className="text-light">Basic</small>
 
               </div>
 
@@ -111,7 +111,7 @@ function Experience(){
               <div>
 
             <h4>PHP</h4>
-            <small className="text-light">Experienced</small>
+            <small className="text-light">intermediate</small>
 
               </div>
              </article>
@@ -122,7 +122,7 @@ function Experience(){
               <div>
 
             <h4>MYSQL</h4>
-            <small className="text-light">Experienced</small>
+            <small className="text-light">Intermidate</small>
 
               </div>
              </article>
