@@ -376,6 +376,34 @@ nav a.active{
   font-size: 0.9rem;
 }
 
+/* project styles */
+.project_container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+
+}
+.project_item{
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.project_item:hover{
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+.projectitem_image{
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.project_item h3{
+  margin: 1.2rem 0 2rem;
+}
+
+
 
 
 

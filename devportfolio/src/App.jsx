@@ -15,9 +15,9 @@ function App() {
 
   return (
       <>
+      <Navbar />
       <Header/>
       <Calltoaction/>
-      <Navbar />
       <About />
       <Experience />
       <Services />
