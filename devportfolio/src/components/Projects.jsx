@@ -36,7 +36,7 @@ const data = [
      id:4,
     image:img4,
     title: "A Bootstrap Bootcamp Website",
-    demo:"https://butterfly0204.github.io/bootstrap-tutorial/"
+    demo:"https://butterfly0204.github.io/favourspace-real-estate-landing-page/"
 
 
   },
@@ -91,53 +91,4 @@ function Projects() {
 }
 
 export default Projects;
-{/* 
 
-<article className="project_item">
-  <div className="projectitem_image">
-    <img src= {img2} alt="" />
-  </div>
-  <h3>A Bootstrap Bootcamp Website</h3>
-    <a href="https://butterfly0204.github.io/bootstrap-tutorial/"className="btn" target="_blank">GitHub</a>
-
-</article>
-
-
-<article className="project_item">
-  <div className="projectitem_image">
-    <img src= {img3} alt="" />
-  </div>
-  <h3>Digital Watch website</h3>
-    <a href=" https://butterfly0204.github.io/my-digital-watch-landing-page/" className="btn" target="_blank">GitHub</a>
-
-</article>
-
-<article className="project_item">
-  <div className="projectitem_image">
-    <img src= {img4} alt="" />
-  </div>
-  <h3>Real-Estate Landing Page</h3>
-      <a href="https://butterfly0204.github.io/favourspace-real-estate-landing-page/"className="btn">GitHub</a>
-
-</article>
-      
-<article className="project_item">
-  <div className="projectitem_image">
-    <img src= {img5} alt="" />
-  </div>
-  <h3>A gym website</h3>
-    
-      <a href="https://butterfly0204.github.io/gym-website/" className="btn">GitHub</a>
-    
-</article>
-
-
-<article className="project_item">
-  <div className="projectitem_image">
-    <img src= {img6} alt="" />
-  </div>
-  <h3></h3>
-      <a href="https://butterfly0204.github.io/fintech/"className="btn">GitHub</a>
-     
-</article>
-*/}
