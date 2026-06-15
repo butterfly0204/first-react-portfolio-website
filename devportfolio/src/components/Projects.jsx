@@ -5,7 +5,59 @@ import img4 from '../assets/favourspace.png'
 import img5 from '../assets/gymwebsite.png'
 import img6 from '../assets/fintechwebsite.png'
 
+
+
+const data = [
+  {
+    id:1,
+    image:img1,
+    title: "Gospel Home Channel",
+    demo:"https://butterfly0204.github.io/Gospel-home-channel/"
+
+
+  },
+
+  {
+     id:2,
+    image:img2,
+    title: "A Bootstrap Bootcamp Website",
+    demo:"https://butterfly0204.github.io/bootstrap-tutorial/"
+
+  },
+  {
+     id:3,
+    image:img3,
+    title: "A digital Watch website",
+    demo:"https://butterfly0204.github.io/my-digital-watch-landing-page/"
+
+  },
+
+  {
+     id:4,
+    image:img4,
+    title: "A Bootstrap Bootcamp Website",
+    demo:"https://butterfly0204.github.io/bootstrap-tutorial/"
+
+
+  },
+  {
+     id:5,
+    image:img5,
+    title: "A Gym website",
+    demo:"https://butterfly0204.github.io/gym-website/"
+
+  },
+
+{
+   id:6,
+    image:img6,
+    title: "A fintech Website",
+    demo:"https://butterfly0204.github.io/fintech/"
+
+}
+]
 function Projects() {
+
   return (
    <section id="project">
     <h5>My Recent work </h5>
@@ -13,63 +65,23 @@ function Projects() {
 
     <div className="container project_container">
 
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img1} alt="Gospel Home Channel Website" />
-        </div>
-        <h3>Gospel Home Channel Website</h3>
-         <a href=" https://butterfly0204.github.io/Gospel-home-channel/" className="btn" target="_blank"></a>  
-         
-      </article>
+      {
+        data.map( ( {id, image, title, demo}) =>{
+          return(
 
+             <article key={id} className="project_item">
+              <div className="projectitem_image">
+                <img src= {image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+               <a href= {demo} className="btn" target="_blank">GitHub</a>  
+               
+            </article> 
+          )
 
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img2} alt="" />
-        </div>
-        <h3>A Bootstrap Bootcamp Website</h3>
-          <a href="https://butterfly0204.github.io/bootstrap-tutorial/"className="btn" target="_blank"></a>
-    
-      </article>
+        })
+      }
 
-
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img3} alt="" />
-        </div>
-        <h3>Digital Watch website</h3>
-          <a href=" https://butterfly0204.github.io/my-digital-watch-landing-page/" className="btn" target="_blank"></a>
-
-      </article>
-
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img4} alt="" />
-        </div>
-        <h3>Real-Estate Landing Page</h3>
-            <a href="https://butterfly0204.github.io/favourspace-real-estate-landing-page/"className="btn"></a>
-
-      </article>
-            
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img5} alt="" />
-        </div>
-        <h3>A gym website</h3>
-          
-            <a href="https://butterfly0204.github.io/gym-website/" className="btn"></a>
-          
-      </article>
-
-
-      <article className="project_item">
-        <div className="projectitem_image">
-          <img src= {img6} alt="" />
-        </div>
-        <h3>Afintech Website</h3>
-            <a href="https://butterfly0204.github.io/fintech/"className="btn"></a>
-           
-      </article>
 
     </div>
 
@@ -79,3 +91,53 @@ function Projects() {
 }
 
 export default Projects;
+{/* 
+
+<article className="project_item">
+  <div className="projectitem_image">
+    <img src= {img2} alt="" />
+  </div>
+  <h3>A Bootstrap Bootcamp Website</h3>
+    <a href="https://butterfly0204.github.io/bootstrap-tutorial/"className="btn" target="_blank">GitHub</a>
+
+</article>
+
+
+<article className="project_item">
+  <div className="projectitem_image">
+    <img src= {img3} alt="" />
+  </div>
+  <h3>Digital Watch website</h3>
+    <a href=" https://butterfly0204.github.io/my-digital-watch-landing-page/" className="btn" target="_blank">GitHub</a>
+
+</article>
+
+<article className="project_item">
+  <div className="projectitem_image">
+    <img src= {img4} alt="" />
+  </div>
+  <h3>Real-Estate Landing Page</h3>
+      <a href="https://butterfly0204.github.io/favourspace-real-estate-landing-page/"className="btn">GitHub</a>
+
+</article>
+      
+<article className="project_item">
+  <div className="projectitem_image">
+    <img src= {img5} alt="" />
+  </div>
+  <h3>A gym website</h3>
+    
+      <a href="https://butterfly0204.github.io/gym-website/" className="btn">GitHub</a>
+    
+</article>
+
+
+<article className="project_item">
+  <div className="projectitem_image">
+    <img src= {img6} alt="" />
+  </div>
+  <h3></h3>
+      <a href="https://butterfly0204.github.io/fintech/"className="btn">GitHub</a>
+     
+</article>
+*/}
