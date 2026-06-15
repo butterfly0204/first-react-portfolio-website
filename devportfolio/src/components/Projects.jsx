@@ -59,7 +59,7 @@ const data = [
 function Projects() {
 
   return (
-   <section id="project">
+   <section id="projects">
     <h5>My Recent work </h5>
     <h2>Projects</h2>
 
