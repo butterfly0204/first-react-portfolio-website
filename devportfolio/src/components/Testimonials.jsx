@@ -1,4 +1,7 @@
-import image from "../assets/my image.png"
+
+import image from "../assets/my-image.png"
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
 
 const data = [
     { 
@@ -25,7 +28,7 @@ const data = [
         name:"Mr Ugbeh",
         review: ` "What stands out about Favour is her problem-solving mindset.
                    Whenever challenges arose during development, she approached them methodically and found effective solutions.
-                   I would gladly work with her again.`
+                   I would gladly work with her again."`
 
     },
     { 
@@ -53,26 +56,32 @@ function Testimonial(){
         <h2>Testimonials</h2>
 
         <div className="container testimonials_container">
+         
+    
 
+        {/* <Swiper> */}
 
             {
                 data.map(({img,name,review}, index) =>{
 
                     return(
-                          <article key={index} className="testimonial">
-                <div className="client_avater">
-                    <img src={img} alt="image" />
+              
+                    <article key={index} className="testimonial">
+                    <div className="client_avater">
+                        <img src={img} alt="image" />
 
-                </div>
-                    <h5 className="client_name"> {name}</h5>
-                    <small className="client_review">{review} </small>
+                    </div>
+                        <h5 className="client_name"> {name}</h5>
+                        <small className="client_review">{review} </small>
 
-            </article>
+                      </article>
+               
                     )
-
                 })
             }
           
+        {/* </Swiper> */}
+
         </div>
     </section>
 
