@@ -1,8 +1,8 @@
-import img from "../assets/my image.png"
+import image from "../assets/my image.png"
 
 const data = [
     { 
-        id: img,
+        img: image,
         name:"Mrs Ugbeh",
         review: ` "Working with Favour was a great experience. She pays attention 
                    to detail, communicates clearly, and consistently delivers clean, 
@@ -12,7 +12,7 @@ const data = [
 
     },
     { 
-        id: img,
+        img: image,
         name:"Mr David",
         review: ` "Favour transformed our ideas into a modern and user-friendly website.
                    She was professional throughout the process, met deadlines,
@@ -21,7 +21,7 @@ const data = [
 
     },
     { 
-        id: img,
+        img: image,
         name:"Mr Ugbeh",
         review: ` "What stands out about Favour is her problem-solving mindset.
                    Whenever challenges arose during development, she approached them methodically and found effective solutions.
@@ -29,7 +29,7 @@ const data = [
 
     },
     { 
-        id: img,
+        img: image,
         name:"Mr Emmanuel",
         review: ` "Favour combines technical knowledge with creativity. 
                    Her ability to create visually appealing designs while maintaining
@@ -37,7 +37,7 @@ const data = [
 
     },
     { 
-        id: img,
+        img: image,
         name:"Miss Peace",
         review: ` "Reliable, hardworking, and eager to learn,
                    Favour is a developer who genuinely cares about delivering quality work. 
@@ -53,21 +53,26 @@ function Testimonial(){
         <h2>Testimonials</h2>
 
         <div className="container testimonials_container">
-            <article className="testimonial">
+
+
+            {
+                data.map(({img,name,review}, index) =>{
+
+                    return(
+                          <article key={index} className="testimonial">
                 <div className="client_avater">
-                    <img src={img} alt="" />
+                    <img src={img} alt="image" />
 
                 </div>
-                    <h5 className="client_name"> Mrs Ugbeh</h5>
-                    <small className="client_review">
-                        "Working with Favour was a great experience. She pays attention 
-                        to detail, communicates clearly, and consistently delivers clean, 
-                        responsive web interfaces. Her dedication to learning 
-                        and improving her skills is evident in every project she takes on."
-
-                    </small>
+                    <h5 className="client_name"> {name}</h5>
+                    <small className="client_review">{review} </small>
 
             </article>
+                    )
+
+                })
+            }
+          
         </div>
     </section>
 
