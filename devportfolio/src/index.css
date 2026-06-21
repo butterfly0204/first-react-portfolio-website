@@ -420,6 +420,7 @@ nav a.active{
 
 }
 .testimonial{
+  
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem;
