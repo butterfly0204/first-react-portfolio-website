@@ -14,4 +14,4 @@ function Headersocials(){
         </>
     )
 }
-export default Headersocials
+export default Headersocials  

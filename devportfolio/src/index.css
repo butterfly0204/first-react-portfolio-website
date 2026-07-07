@@ -406,6 +406,8 @@ nav a.active{
 /* Testimonials styles */
 .container.testimonials_container{
   width:40%;
+  padding-bottom:4rem;
+ 
  
 }
 
@@ -424,6 +426,7 @@ nav a.active{
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem;
+
   border-radius: 2rem;
   user-select: none;
 }
@@ -437,11 +440,120 @@ nav a.active{
 
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  background: var(--color-primary);
+
+}
+
+/* contact styles */
+.container.contact_container{
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+
+}
+.contact_options{
+  display:flex;
+  flex-direction: column;
+  gap: 1.2rem;     
+}
+.contact_option{
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.contact_option:hover{
+  background: transparent;
+  background-color: var(--color-primary-variant);
+}
+.contact_icon{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+
+}
+.contact_option a{
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
 
 
 
+/* Contact Fr */
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+input, textarea{
+  width: 100%;
+  padding:1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var( --color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
+/* footer design */
+footer{
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+
+footer a {
+  color: var(--color-bg);
+}
+
+.footer_logo{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.permalinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+}
+.footer_socials{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer_socials a{
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+.footer_socials a:hover{
+  background: transparent;
+  color: var(--color-bg);
+  border-color:var(--color-bg) ;
+}
+
+.footer_copyright{
+  margin-bottom: 4rem;
+  color: var(--color-bg);
+}
 
 
+ 
 
 
 
@@ -473,44 +585,50 @@ nav a.active{
   header{
     height: 68vh;
   }
+  .about_container{
+     grid-template-columns: 1fr; 
+    gap: 0;
+  }
+  .about_me{
+    width:50%;
+    margin: 2rem auto 4rem;
+  }
+  .about_content p{
+    margin: 1rem 0 1.5rem;
+  }
   
-}
-.about_container{
-   grid-template-columns: 1fr; 
-  gap: 0;
-}
-.about_me{
-  width:50%;
-  margin: 2rem auto 4rem;
-}
-.about_content p{
-  margin: 1rem 0 1.5rem;
-}
+  .experience_container{
+    grid-template-columns: 1fr;
+  }
+  
+  .experience_container >div{
+    width:80%;
+    padding:2rem;
+    margin:0 auto;
+  }
+  .experience_content{
+    padding:1rem;
+  }
+  
+  .services_container{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .service{
+    height: auto;
+  }
+  
+  .container.testimonials_container{
+    width:60% ;
+  }
+  .container.contact_container{
+    grid-template-columns: 1fr;
+    gap:2rem;
+  
+  }
 
-.experience_container{
-  grid-template-columns: 1fr;
-}
-
-.experience_container >div{
-  width:80%;
-  padding:2rem;
-  margin:0 auto;
-}
-.experience_content{
-  padding:1rem;
-}
-
-.services_container{
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-.service{
-  height: auto;
-}
-
-.container.testimonials_container{
-  width:60% ;
-}
+  }
+    
 
 
 
@@ -572,6 +690,21 @@ width: var(--container-width-sm);
 .client_review{
 width: var(--container-width-sm);
 }
+
+.container.contact_container{
+width: var(--container-width-sm);
+}
+
+.permalinks{
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer_socials{
+margin-bottom: 2.6rem;
+}
+
+
 
 
 

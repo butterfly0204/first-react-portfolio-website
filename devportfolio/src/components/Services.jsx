@@ -119,14 +119,7 @@ function Services() {
           <IoMdCheckmark className="servicelist_Icon" />
           <p>Tech Content Creation </p>
         </li>
-        <li>
-          <IoMdCheckmark className="servicelist_Icon" />
-          <p>Visual Content Design </p>
-        </li>
-        <li>
-          <IoMdCheckmark className="servicelist_Icon" />
-          <p>Photography and Editing</p>
-        </li>
+      
         <li>
           <IoMdCheckmark className="servicelist_Icon" />
           <p>Product Photography </p>
